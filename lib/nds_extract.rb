@@ -25,8 +25,8 @@ def directors_totals(nds)
  directory_index=0
   while directory_index <nds.length do
     director=nds[directory_index]
-    result[director[:name]]+=gross_for_director(director)
-    director+=1
+    result[director[:name]]=gross_for_director(director)
+    directory_index+=1
   end
   result
 end
